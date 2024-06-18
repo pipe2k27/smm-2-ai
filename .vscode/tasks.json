@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "devlocal",
+      "label": "pnpm:devlocal",
+      "detail": "vite",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "custom",
+          "pattern": {
+            "regexp": "^$"
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "VITE",
+            "endsPattern": "  ➜  press h to show help"
+          }
+        }
+      ]
+    },
+    {
+      "type": "shell",
+      "command": "${input:terminate}",
+      "label": "terminate pnpm:devlocal",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "pnpm:devlocal"
+    }
+  ]
+}

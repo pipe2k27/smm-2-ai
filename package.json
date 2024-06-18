@@ -1,0 +1,93 @@
+{
+  "name": "react-application-sample",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "devlocal": "vite --mode devlocal",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "pnpm run lint --fix",
+    "fmt": "prettier --write ./src",
+    "test": "vitest",
+    "e2e": "npx playwright test -c ./e2e/playwright.config.ts",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
+    "@tanstack/react-query-devtools": "^4.32.0",
+    "axios": "^1.6.1",
+    "clsx": "^1.2.1",
+    "dipcore-react-lib": "workspace:^",
+    "dotenv": "^16.3.1",
+    "lodash-es": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.1.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/lodash-es": "^4.17.11",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitest/coverage-v8": "^0.33.0",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.0",
+    "i18next": "23.7.6",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^15.1.0",
+    "playwright-msw": "^2.2.1",
+    "prettier": "^2.8.8",
+    "prop-types": "15.8.1",
+    "react-i18next": "13.4.1",
+    "sass": "^1.62.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.34.6"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "resolutions": {
+    "@types/react": "18.0.28",
+    "axios": "^1.6.1"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --ignore-unknown --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  }
+}
