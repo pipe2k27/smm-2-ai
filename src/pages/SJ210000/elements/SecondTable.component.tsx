@@ -18,7 +18,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 5,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: ' center-cell',
+        cellClassName: ' center-cell border-cell',
         headerAlign: 'center',
       },
       {
@@ -28,7 +28,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 350,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell border-input-cell ',
         headerAlign: 'center',
       },
       {
@@ -38,7 +38,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 10,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
       },
       {
@@ -48,7 +48,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 10,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
       },
       {
@@ -58,7 +58,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 150,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
       },
       {
@@ -68,7 +68,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 100,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
         valueFormatter: ({ value }: { value: number | bigint | null | undefined }): string => {
           if (value === null || value === undefined) {
@@ -84,7 +84,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 100,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
         valueFormatter: ({ value }: { value: number | bigint | null | undefined }): string => {
           if (value === null || value === undefined) {
@@ -100,7 +100,7 @@ export const SecondTable = (): React.ReactElement => {
         width: 100,
         sortable: false,
         headerClassName: 'purple-cell center-cell',
-        cellClassName: 'center-cell',
+        cellClassName: 'center-cell border-cell',
         headerAlign: 'center',
         valueFormatter: ({ value }: { value: number | bigint | null | undefined }): string => {
           if (value === null || value === undefined) {
