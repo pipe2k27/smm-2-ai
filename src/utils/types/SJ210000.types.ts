@@ -79,3 +79,31 @@ export type CheckDocumentInfoRes = {
   resultCode: number;
   statusInfCheck: StatusInfCheck;
 };
+
+// First Table
+
+export type FirstTableFields = {
+  corporationCode: string;
+  storeCode: string;
+  storeName: string;
+  inspectionDate: string;
+  type: string;
+  slipType: string;
+  slipNumber: string;
+  cd: string;
+  supplierCode: string;
+  supplierName: string;
+};
+
+// Second Table
+
+export type SecondTableFields = {
+  black: string;
+  productName: string;
+  row: string;
+  reasoningCode: string;
+  productCode: string;
+  productQuantity: string;
+  unitPrice: string;
+  costAmount: string;
+};
