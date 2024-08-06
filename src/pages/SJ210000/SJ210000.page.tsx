@@ -1,11 +1,10 @@
 import { Stack } from '@mui/material';
-import React from 'react';
-import { FirstTable } from './modules/FirstTable';
-import { Footer } from './modules/Footer';
-import { SecondTable } from './modules/SecondTable';
-import { PageContainer } from '@/components/common/layouts/PageContainer';
+import { FirstTable } from './elements/FirstTable';
+import { SecondTable } from './elements/SecondTable';
+import { PageContainer } from '@/components/layout/PageContainer';
+import { Footer } from '@/components/page/SJ210000/Footer';
 
-export const NewPage = (): React.ReactElement => (
+export const SJ210000 = (): React.ReactElement => (
   <>
     <PageContainer>
       <Stack alignItems="flex-start" width={952}>

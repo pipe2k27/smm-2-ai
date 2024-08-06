@@ -2,7 +2,7 @@ import { Stack } from '@mui/material';
 import type { GridColDef } from 'dipcore-react-lib';
 import { DipDataGrid } from 'dipcore-react-lib';
 import React, { useMemo } from 'react';
-import { firstMock, secondMock } from './MockData';
+import { firstMock, secondMock } from '@/utils/consts/MockData';
 
 export const FirstTable = (): React.ReactElement => {
   const firstRow: GridColDef[] = useMemo(
