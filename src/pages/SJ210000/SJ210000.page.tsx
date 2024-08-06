@@ -1,8 +1,8 @@
 import { Stack } from '@mui/material';
-import { FirstTable } from './elements/FirstTable';
-import { SecondTable } from './elements/SecondTable';
-import { PageContainer } from '@/components/layout/PageContainer';
-import { Footer } from '@/components/page/SJ210000/Footer';
+import { FirstTable } from './elements/FirstTable.component';
+import { SecondTable } from './elements/SecondTable.component';
+import { PageContainer } from '@/components/layout/PageContainer.component';
+import { Footer } from '@/components/page/SJ210000/Footer.component';
 
 export const SJ210000 = (): React.ReactElement => (
   <>

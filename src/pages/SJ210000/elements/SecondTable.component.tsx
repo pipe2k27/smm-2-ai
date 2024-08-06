@@ -2,7 +2,7 @@ import { Stack } from '@mui/material';
 import type { GridColDef } from 'dipcore-react-lib';
 import { DipDataGrid } from 'dipcore-react-lib';
 import React, { useMemo } from 'react';
-import { thirdMock } from '@/utils/consts/MockData';
+import { thirdMock } from '@/utils/consts/SJ210000.consts';
 
 export const SecondTable = (): React.ReactElement => {
   const currencyFormatter = new Intl.NumberFormat('en-US', {
