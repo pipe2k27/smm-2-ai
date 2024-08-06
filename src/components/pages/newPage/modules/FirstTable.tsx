@@ -9,7 +9,7 @@ export const FirstTable = (): React.ReactElement => {
     () => [
       {
         id: '1',
-        field: 'corporate',
+        field: 'corporationCode',
         headerName: '法人',
         width: 50,
         sortable: false,
@@ -19,7 +19,7 @@ export const FirstTable = (): React.ReactElement => {
       },
       {
         id: '2',
-        field: 'store',
+        field: 'storeCode',
         headerName: '店',
         width: 70,
         sortable: false,
@@ -39,7 +39,7 @@ export const FirstTable = (): React.ReactElement => {
       },
       {
         id: '4',
-        field: 'date',
+        field: 'inspectionDate',
         headerName: '検収日',
         width: 90,
         sortable: false,
@@ -55,7 +55,7 @@ export const FirstTable = (): React.ReactElement => {
     () => [
       {
         id: '1',
-        field: 'classification',
+        field: 'type',
         headerName: '分類',
         width: 50,
         sortable: false,
@@ -65,7 +65,7 @@ export const FirstTable = (): React.ReactElement => {
       },
       {
         id: '2',
-        field: 'voucherClass',
+        field: 'slipType',
         headerName: '伝票区分',
         width: 70,
         sortable: false,
@@ -95,7 +95,7 @@ export const FirstTable = (): React.ReactElement => {
       },
       {
         id: '5',
-        field: 'suppliers',
+        field: 'supplierCode',
         headerName: '取引先',
         width: 70,
         sortable: false,
@@ -105,7 +105,7 @@ export const FirstTable = (): React.ReactElement => {
       },
       {
         id: '6',
-        field: 'customerName',
+        field: 'supplierName',
         headerName: '取引先名',
         width: 200,
         sortable: false,

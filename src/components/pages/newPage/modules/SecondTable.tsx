@@ -43,7 +43,7 @@ export const SecondTable = (): React.ReactElement => {
       },
       {
         id: '4',
-        field: 'reason',
+        field: 'reasoningCode',
         headerName: '理',
         width: 10,
         sortable: false,
@@ -63,7 +63,7 @@ export const SecondTable = (): React.ReactElement => {
       },
       {
         id: '6',
-        field: 'quantity',
+        field: 'productQuantity',
         headerName: '数量',
         width: 100,
         sortable: false,
