@@ -13,7 +13,7 @@ export const Footer = (): React.ReactElement => {
       sx={{ backgroundColor: theme.palette.background.default }}
     >
       <Stack direction="row" gap={1}>
-        <DipButton color="error" label="終了" />
+        <DipButton label="終了" />
         <DipButton label="クリア" />
         <DipButton label="Excel" />
       </Stack>
