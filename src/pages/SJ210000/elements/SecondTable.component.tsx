@@ -30,6 +30,7 @@ export const SecondTable = (): React.ReactElement => {
         headerClassName: 'purple-cell center-cell',
         cellClassName: 'center-cell border-cell border-input-cell ',
         headerAlign: 'center',
+        // editable: true,
       },
       {
         id: '3',
