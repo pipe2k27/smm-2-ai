@@ -42,6 +42,16 @@ input {
   color: #f09300;
 }
 
+.border-cell {
+  border: 2px solid;
+}
+
+.border-input-cell {
+  border-radius: 2px;
+  border: 1px solid #5a5a5a;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5), inset -1px -1px 3px rgba(255, 255, 255, 0.5);
+}
+
 /* mui style overrides */
 
 /* table - grid styles */
