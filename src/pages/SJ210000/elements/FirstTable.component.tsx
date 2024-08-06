@@ -118,7 +118,7 @@ export const FirstTable = (): React.ReactElement => {
   );
 
   return (
-    <Stack alignItems="flex-start" mt={4}>
+    <Stack alignItems="flex-start" mt={2}>
       <Stack direction="row">
         <Stack
           padding={1}

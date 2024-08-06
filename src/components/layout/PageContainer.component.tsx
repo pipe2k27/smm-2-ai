@@ -6,6 +6,4 @@ type Props = {
   children: any;
 };
 
-export const PageContainer = ({ children }: Props): React.ReactElement => (
-  <Box height={740}>{children}</Box>
-);
+export const PageContainer = ({ children }: Props): React.ReactElement => <Box>{children}</Box>;

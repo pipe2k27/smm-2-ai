@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { FirstTable } from './elements/FirstTable.component';
 import { SecondTable } from './elements/SecondTable.component';
 import { PageContainer } from '@/components/layout/PageContainer.component';
@@ -64,6 +64,8 @@ export const SJ210000 = (): React.ReactElement => (
         </Stack>
       </Stack>
     </PageContainer>
-    <Footer />
+    <Box mt={2}>
+      <Footer />
+    </Box>
   </>
 );
