@@ -1,5 +1,5 @@
+import { Stack, useTheme } from '@mui/material';
 import { StyledButton } from '@/components/UI';
-import { Stack, Typography, useTheme } from '@mui/material';
 
 export const Footer = (): React.ReactElement => {
   const theme = useTheme();
