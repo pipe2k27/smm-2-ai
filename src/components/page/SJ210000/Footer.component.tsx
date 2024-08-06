@@ -1,29 +1,5 @@
+import { StyledButton } from '@/components/UI';
 import { Stack, Typography, useTheme } from '@mui/material';
-import { DipButton } from 'dipcore-react-lib';
-
-interface Props {
-  label?: string;
-  buttonNumber: string;
-  disabled?: boolean;
-}
-
-const FooterButton: React.FC<Props> = ({ label, buttonNumber, disabled = false }) => {
-  return (
-    <Stack alignItems="center" justifyContent="center" flex={1} gap={1}>
-      {label ? (
-        <DipButton
-          label={label}
-          color="inherit"
-          sx={{ borderRadius: '1px', width: '76px', height: '36px' }}
-          disabled={disabled}
-        />
-      ) : (
-        <Stack sx={{ width: '76px', height: '36px' }} />
-      )}
-      <Typography>{buttonNumber}</Typography>
-    </Stack>
-  );
-};
 
 export const Footer = (): React.ReactElement => {
   const theme = useTheme();
@@ -37,18 +13,18 @@ export const Footer = (): React.ReactElement => {
       sx={{ backgroundColor: theme.palette.background.default }}
     >
       <Stack direction="row" gap={1} width="100%">
-        <FooterButton label="終了" buttonNumber="F1" />
-        <FooterButton label="画面印刷" buttonNumber="F2" />
-        <FooterButton label="強制入力" buttonNumber="F3" disabled />
-        <FooterButton label="合計入力" buttonNumber="F4" />
-        <FooterButton buttonNumber="F5" />
-        <FooterButton label="確認" buttonNumber="F6" />
-        <FooterButton label="登録" buttonNumber="F7" disabled />
-        <FooterButton buttonNumber="F8" />
-        <FooterButton buttonNumber="F9" />
-        <FooterButton label="戻る" buttonNumber="F10" />
-        <FooterButton buttonNumber="F11" />
-        <FooterButton buttonNumber="F12" />
+        <StyledButton label="終了" buttonNumber="F1" />
+        <StyledButton label="画面印刷" buttonNumber="F2" />
+        <StyledButton label="強制入力" buttonNumber="F3" disabled />
+        <StyledButton label="合計入力" buttonNumber="F4" />
+        <StyledButton buttonNumber="F5" />
+        <StyledButton label="確認" buttonNumber="F6" />
+        <StyledButton label="登録" buttonNumber="F7" disabled />
+        <StyledButton buttonNumber="F8" />
+        <StyledButton buttonNumber="F9" />
+        <StyledButton label="戻る" buttonNumber="F10" />
+        <StyledButton buttonNumber="F11" />
+        <StyledButton buttonNumber="F12" />
       </Stack>
     </Stack>
   );
