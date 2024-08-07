@@ -3,6 +3,7 @@ import ErrorIcon from '@mui/icons-material/Error';
 import HelpIcon from '@mui/icons-material/Help';
 import { Box, Typography, IconButton, Stack } from '@mui/material';
 import { DipButton, DipModal } from 'dipcore-react-lib';
+import type { Dispatch, SetStateAction } from 'react';
 
 type Props = {
   title: string;
@@ -11,7 +12,7 @@ type Props = {
   secondButtonLabel?: string;
   isOpen: boolean;
   variant: 'error' | 'info';
-  setIsOpen: (isOpen: boolean) => void;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
   onSubmitFirstButton: () => void;
   onSubmitSecondButton?: () => void;
 };
@@ -30,7 +31,9 @@ export const StyledModal: React.FC<Props> = ({
   if (!isOpen) return null;
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  const handleClose = () => setIsOpen(false);
+  const handleClose = () => {
+    setIsOpen((prev: boolean) => !prev);
+  };
 
   return (
     <DipModal
