@@ -1,3 +1,11 @@
+// Constants
+
+export const C_STATUS_DEFAULT = 0;
+export const C_STATUS_START = 1;
+export const C_STATUS_KENSAKU = 2;
+export const C_STATUS_KYOUSEI = 3;
+export const C_STATUS_TOUROKU = 4;
+
 export const firstMock = [
   {
     id: '1',
