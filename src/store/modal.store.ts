@@ -1,3 +1,11 @@
 import { atom } from 'jotai';
+import type { ModalStoreType } from '@/utils/types';
 
-export const isOpenAtom = atom(false);
+export const ModalAtom = atom<ModalStoreType>({
+  isOpen: false,
+  title: 'Error',
+  text: 'An error occurred',
+  fistButtonLabel: 'OK',
+  onSubmitFirstButton: () => {},
+  variant: 'error',
+});
