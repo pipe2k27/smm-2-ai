@@ -1,14 +1,14 @@
 import { Box, CircularProgress, Stack } from '@mui/material';
 import { useAtom } from 'jotai';
-import { isLoading } from '@/store';
+import { GlobalLoadingAtom } from '@/store';
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const LoadingSpinner = () => {
-  const [loading] = useAtom(isLoading);
+  const [isLoading] = useAtom(GlobalLoadingAtom);
 
   return (
     <>
-      {loading && (
+      {isLoading && (
         <Box
           sx={{
             position: 'fixed',

@@ -1,8 +1,6 @@
 import { Box, Stack } from '@mui/material';
-import { FirstTable } from './elements/FirstTable.component';
-import { SecondTable } from './elements/SecondTable.component';
-import { PageContainer } from '@/components/layout/PageContainer.component';
-import { Footer } from '@/components/page/SJ210000/Footer.component';
+import { FirstTable, SecondTable } from './elements';
+import { ButtonList, PageContainer } from '@/components';
 
 export const SJ210000 = (): React.ReactElement => (
   <>
@@ -65,7 +63,7 @@ export const SJ210000 = (): React.ReactElement => (
       </Stack>
     </PageContainer>
     <Box mt={2}>
-      <Footer />
+      <ButtonList />
     </Box>
   </>
 );

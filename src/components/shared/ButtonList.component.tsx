@@ -1,7 +1,7 @@
 import { Stack, useTheme } from '@mui/material';
 import { StyledButton } from '@/components/UI';
 
-export const Footer = (): React.ReactElement => {
+export const ButtonList = (): React.ReactElement => {
   const theme = useTheme();
 
   return (

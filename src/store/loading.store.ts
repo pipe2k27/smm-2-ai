@@ -1,3 +1,3 @@
 import { atom } from 'jotai';
 
-export const isLoading = atom(true);
+export const GlobalLoadingAtom = atom(false);
